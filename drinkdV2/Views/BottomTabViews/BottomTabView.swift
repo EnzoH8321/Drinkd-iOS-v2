@@ -9,7 +9,27 @@ import SwiftUI
 
 struct BottomTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            EmptyView()
+                .tabItem {
+                    Label("Home", systemImage: "house.fill")
+                }
+            
+            EmptyView()
+                .tabItem {
+                    Label("Top Choices", systemImage: "chart.bar.fill")
+                }
+            
+            EmptyView()
+                .tabItem {
+                    Label("Party", systemImage: "person.3.fill")
+                }
+            
+            EmptyView()
+                .tabItem {
+                    Label("Settings", systemImage: "slider.horizontal.3")
+                }
+        }
     }
 }
 
